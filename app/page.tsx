@@ -19,8 +19,8 @@ const Home = () => {
           <Image
             src={electron}
             alt="Electron Atom"
-            layout="fill"
-            objectFit="contain"
+            fill
+            style={{ objectFit: 'contain' }}
             className='mix-blend-difference'
           />
         </div>

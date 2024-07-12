@@ -26,3 +26,4 @@ secrets.json
 *.bak
 *.swp
 node_modules
+*.env

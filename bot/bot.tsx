@@ -17,6 +17,7 @@ bot.onText(/\/start/, (msg) => {
     bot.sendMessage(chatId, `Hello, ${msg.from?.first_name}! Welcome to the MiniG bot. What would you like to do?`, options);
 });
 
+
 bot.on('callback_query', (callbackQuery) => {
     const message = callbackQuery.message;
     const chatId = message?.chat.id;

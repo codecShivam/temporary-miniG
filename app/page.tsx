@@ -14,7 +14,7 @@ const Home = () => {
         backgroundPosition: 'center',
       }}
       className="min-h-screen flex flex-col justify-evenly bg-gradient-to-b from-black via-black to-orange-900 max-w-screen sm:max-w-sm mx-auto text-white relative">
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center mt-10">
         <div className="relative w-64 h-64">
           <Image
             src={electron}
@@ -50,7 +50,7 @@ const Home = () => {
         <p className="text-center text-[#6F6A6A] font-mono text-xs font-medium pb-12">You are an electron,<br /> with the mission to <span className='text-white'>maximize intelligence</span></p>
         <div className="w-full h-[0.0625rem] my-4" style={{ background: 'linear-gradient(270deg, #F85712 0%, rgba(153, 153, 153, 0.00) 100%)' }}></div>
       </div>
-      <div className="flex justify-center bg-[#090920] mx-auto rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105 active:scale-95 font-normal">
+      <div className="flex justify-center mb-10 bg-[#090920] mx-auto rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105 active:scale-95 font-normal">
         <button className="px-8 py-3 text-lg font-normal text-white transition-transform duration-300 ease-in-out transform hover:scale-105 active:scale-95 focus:outline-none "
           style={{ fontFamily: 'LINE Seed Sans' }}>
           Earn MiniG

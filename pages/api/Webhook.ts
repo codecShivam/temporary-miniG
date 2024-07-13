@@ -12,6 +12,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       const text = "Let's get started 🍿\n\nPlease tap the button below to launch MiniG!";
       const imageUrl = 'https://i.ibb.co/9skGSgD/miniG.jpg';
 
+      
       try {
         // Send an image with a caption and an inline button
         await fetch(`https://api.telegram.org/bot${token}/sendPhoto`, {

@@ -1,11 +1,17 @@
-'use client'
+'use client';
 
-import Image from 'next/image'
-import electron from '@/assets/electron.png'
-import GPULogo from '@/assets/GPULogo.png'
-import mainBG from '@/assets/mainBg.png'
-
+import Image from 'next/image';
+import electron from '@/assets/electron.png';
+import GPULogo from '@/assets/GPULogo.png';
+import mainBG from '@/assets/mainBg.png';
+import { useRouter } from 'next/navigation';
 const Home = () => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('/earn-minig');
+  };
+
   return (
     <div
       style={{
@@ -13,7 +19,8 @@ const Home = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
-      className="min-h-screen flex flex-col justify-evenly bg-gradient-to-b from-black via-black to-orange-900 max-w-screen sm:max-w-sm mx-auto text-white relative">
+      className="min-h-screen flex flex-col  justify-evenly bg-gradient-to-b from-black via-black to-orange-900 max-w-screen sm:max-w-sm mx-auto text-white relative"
+    >
       <div className="flex flex-col items-center justify-center mt-10">
         <div className="relative w-64 h-64">
           <Image
@@ -51,13 +58,16 @@ const Home = () => {
         <div className="w-full h-[0.0625rem] my-4" style={{ background: 'linear-gradient(270deg, #F85712 0%, rgba(153, 153, 153, 0.00) 100%)' }}></div>
       </div>
       <div className="flex justify-center mb-10 bg-[#090920] mx-auto rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105 active:scale-95 font-normal">
-        <button className="px-8 py-3 text-lg font-normal text-white transition-transform duration-300 ease-in-out transform hover:scale-105 active:scale-95 focus:outline-none "
-          style={{ fontFamily: 'LINE Seed Sans' }}>
+        <button
+          className="px-8 py-3 text-lg font-normal text-white transition-transform duration-300 ease-in-out transform hover:scale-105 active:scale-95 focus:outline-none"
+          style={{ fontFamily: 'LINE Seed Sans' }}
+          onClick={handleClick}
+        >
           Earn MiniG
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

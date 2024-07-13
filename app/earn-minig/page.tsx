@@ -36,8 +36,8 @@ const EarnMiniG = () => {
                 </div>
             </div>
             <div className='text-center mx-8 font-mono font-normal'>
-            <h2 className="text-2xl font-normal mb-4" >You are Early!</h2>
-            <h3 className="text-[2.12rem] font-medium mb-8" >Claim Bonus</h3>
+                <h2 className="text-2xl font-normal mb-4" >You are Early!</h2>
+                <h3 className="text-[2.12rem] font-medium mb-8" >Claim Bonus</h3>
                 <div className="flex flex-col gap-4">
                     <button className="px-6 py-3 flex justify-between items-center rounded-[0.625rem] border border-[#CFA150] bg-gradient-to-b from-[rgba(205,144,59,0.20)] to-[rgba(52,45,38,0.20)] bg-[#342D26] shadow-lg">
                         <span>Connect your X</span> <span>100K+</span>
@@ -53,14 +53,14 @@ const EarnMiniG = () => {
                     </button>
                 </div>
             </div>
-                <div className="flex justify-center w-fit  bg-[#090920] mx-auto rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105 active:scale-95 font-normal">
-                    <button
-                        className="px-8 py-3 text-lg font-normal text-white transition-transform duration-300 ease-in-out transform hover:scale-105 active:scale-95 focus:outline-none"
-                        style={{ fontFamily: 'LINE Seed Sans' }}
-                    >
-                        Claim MiniG
-                    </button>
-                </div>
+            <div className="flex justify-center w-fit mt-8 bg-[#090920] mx-auto rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105 active:scale-95 font-normal">
+                <button
+                    className="px-8 py-3 text-lg font-normal text-white transition-transform duration-300 ease-in-out transform hover:scale-105 active:scale-95 focus:outline-none"
+                    style={{ fontFamily: 'LINE Seed Sans' }}
+                >
+                    Claim MiniG
+                </button>
+            </div>
             <Link href="/">
                 <div className="absolute top-4 right-4 mt-4 text-white text-lg">SKIP</div>
             </Link>

@@ -28,3 +28,4 @@ secrets.json
 node_modules
 *.env
 .next
+.vercel
